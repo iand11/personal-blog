@@ -24,28 +24,35 @@
   display: inline-block;
   width:320px;
   margin:3em;
-  border-radius: 10px;
-  box-shadow: 3px 5px 2px 2px #d3d3d3; 
+  box-shadow: 0px 0px 20px black;;
 }
 
-.post-section :hover {
- box-shadow: 0px 0px 0px 0px white; 
+.post-section:hover{
+ box-shadow: 0px 0px 0px #FFF;
+
 }
 
 .post-item {
   width:320px;
-  margin: 0.5em auto;
+  margin: 1em auto;
 }
 
 .post-image {
-  /*margin-left:12px;*/
-  /*border-radius: 10px;*/
+  margin-top: 0px;
 }
 
 .post-date {
+  margin-left:5px;
   color:#999999;
 }
 
 .post-short-description {
  color:#999999; 
+ text-align: center;
+
 }
+
+.post-title {
+  margin-left:5px;
+}
+
