@@ -37,7 +37,7 @@
 
 .post-item {
   width:320px;
-  margin: 1em auto;
+  margin: 0.5em auto;
 }
 
 .post-image {
@@ -45,13 +45,16 @@
 }
 
 .post-date {
+  font-family: "Raleway";
   margin-left:5px;
-  color:#999999;
+  color:#8d8d8d;
 }
 
 .post-short-description {
- color:#999999; 
- text-align: center;
+  margin-left:5px;
+  font-family: "Raleway";
+  color:#8d8d8d; 
+  /*text-align: center;*/
 
 }
 
@@ -99,12 +102,14 @@
 }
 
 .post-body-show {
+  font-family: "Raleway";
   width:1200px;
+  font-size: 110%;
 }
 
 .created_at {
   width:1200px;
-  color:#999999;
+  color:#8d8d8d;
   font-size: 80%;
   margin:1em 0em;
   border-bottom:solid 1px grey;
