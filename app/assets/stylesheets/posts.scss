@@ -25,10 +25,9 @@
   width:320px;
   margin:3em;
   box-shadow: 0px 0px 20px black;
-/*  -webkit-transition-delay: 2s;
-  -moz-transition-delay: 2s;
-  -o-transition-delay: 2s;
-  transition-delay: 0.3s;*/
+/*  transition-property: top;
+  transition-property: box-shadow;
+  transition-delay: 0.1s;*/
 }
 
 .post-section:hover{
@@ -78,4 +77,28 @@
 
 .recent-post-title {
   width:100px;
+}
+
+
+/*Show*/
+.container{
+  width:80%;
+  margin: 1em auto;
+}
+
+.post-pic-show {
+  width:500px;
+  margin:auto;
+}
+
+.post-show-title{
+  width:300px;
+}
+
+.created_at {
+  width:500px;
+  color:#999999;
+  font-size: 80%;
+  margin:1em 0em;
+  border-bottom:solid 1px grey;
 }
