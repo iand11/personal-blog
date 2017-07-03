@@ -1,2 +1,20 @@
-<h1><%= @post.title %></h1>
-<p><%= @post.body %></p>
+<div class="container">
+  <img class="post-pic-show" src="https://unsplash.it/500/500/?image=1033" alt="ooppsss">
+  <h1 class="post-show-title"><%= @post.title %></h1>
+  <p class="created_at"><%= @post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+  <p><%= @post.body %></p>
+
+  <div class="recent-posts-section">
+    <h2>Latest Posts</h2>
+    <div class="recent-post">
+      <img class="recent-post-image" src="https://unsplash.it/300/300/?image=1033" alt="ooppsss">
+      <h3 class="recent-post-title">First Post</h3>
+    </div>
+
+    <div class="recent-post">
+      <img class="recent-post-image" src="https://unsplash.it/300/300/?image=1002" alt="ooppsss">
+      <h3 class="recent-post-title">Second Post</h3>
+    </div>
+  
+  </div>
+</div>
