@@ -25,9 +25,6 @@
   width:320px;
   margin:3em;
   box-shadow: 0px 0px 20px black;
-/*  transition-property: top;
-  transition-property: box-shadow;
-  transition-delay: 0.1s;*/
 }
 
 .post-section:hover{
@@ -82,7 +79,7 @@
 
 /*Show*/
 .container{
-  width:80%;
+  width:95%;
   margin: 1em auto;
 }
 
@@ -93,6 +90,10 @@
 
 .post-show-title{
   width:300px;
+}
+
+.post-body-show {
+  width:700px;
 }
 
 .created_at {

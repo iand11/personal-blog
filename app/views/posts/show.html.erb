@@ -1,9 +1,4 @@
 <div class="container">
-  <img class="post-pic-show" src="https://unsplash.it/500/500/?image=1033" alt="ooppsss">
-  <h1 class="post-show-title"><%= @post.title %></h1>
-  <p class="created_at"><%= @post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
-  <p><%= @post.body %></p>
-
   <div class="recent-posts-section">
     <h2>Latest Posts</h2>
     <div class="recent-post">
@@ -17,4 +12,10 @@
     </div>
   
   </div>
+  
+  <img class="post-pic-show" src="https://unsplash.it/500/500/?image=1033" alt="ooppsss">
+  <h1 class="post-show-title"><%= @post.title %></h1>
+  <p class="created_at"><%= @post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+  <p class="post-body-show"><%= @post.body %></p>
+
 </div>
