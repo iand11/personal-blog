@@ -24,10 +24,15 @@
   display: inline-block;
   width:320px;
   margin:3em;
-  box-shadow: 0px 0px 20px black;;
+  box-shadow: 0px 0px 20px black;
+/*  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 0.3s;*/
 }
 
 .post-section:hover{
+ cursor: pointer;
  box-shadow: 0px 0px 0px #FFF;
  position: relative;
  top: 5px;
