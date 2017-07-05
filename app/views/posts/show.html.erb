@@ -23,4 +23,9 @@
   <p class="created_at"><%= @post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
   <p class="post-body-show"><%= @post.body %></p>
 
+
+  <div class="post-counter">
+    <span class="current-post-number"><%= @post.id %>/<span><%= @all_posts.length %></span></span> 
+  </div>
+
 </div>
