@@ -25,7 +25,10 @@
 
 
   <div class="post-counter">
-    <span class="current-post-number"><%= @post.id %>/<span><%= @all_posts.length %></span></span> 
+    <div class="arrow-back">
+      
+    </div>
+    <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span> 
   </div>
 
 </div>
