@@ -131,5 +131,38 @@
 
 .post-counter {
   float:right;
-  margin:20px 50px 0px 0px ;
+  margin:20px 50px 0px 0px;
+  display: inline-block;
+}
+
+.post-counter span {
+  font-size: 140%;
+}
+
+.arrow {
+  height:50px;
+  width:50px;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.arrow i {
+  line-height: 47px;
+  margin-left: 12px;
+  font-size: 25px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  background-color:#0099cc;
+  color: white;
+}
+
+.arrow-back {
+  margin-right: 8px
+}
+
+.arrow-forward {
+  margin-left: 8px
 }
