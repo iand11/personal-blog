@@ -55,12 +55,14 @@
   margin-left:5px;
   font-family: "Raleway";
   color:#3f3f3f; 
-  /*text-align: center;*/
-
 }
 
 .post-title {
   margin-left:5px;
+}
+
+.post-title:hover {
+  color:#0099cc;
 }
 
 .recent-posts-section {
