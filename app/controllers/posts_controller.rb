@@ -23,11 +23,19 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    if logged_in?
+      @post = Post.new
+    else
+      redirect_to root_path
+    end 
   end
 
   def edit
-    @post = Post.find(params[:id])
+    if logged_in?
+      @post = Post.find(params[:id])
+    else
+      redirect_to root_path
+    end 
   end
 
   def update
