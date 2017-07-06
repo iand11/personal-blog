@@ -3,7 +3,7 @@
 
   <img class="post-pic-show" src="https://unsplash.it/500/500/?image=1033" alt="ooppsss">
   <h1 class="post-show-title"><%= @post.title %></h1>
-  <p class="created_at"><%= @post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+  <p class="created_at"><%= @post.created_at.strftime("%A, %d %b %Y") %></p>
   <p class="post-body-show"><%= @post.body %></p>
 
 
@@ -11,30 +11,14 @@
   <% case @post.id %>
     <% when 1 %>
       <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
-      <div class="arrow arrow-forward">
-        <%= link_to post_path(@post.id + 1)  do %>
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        <% end  %>
-      </div> 
+      <%= render partial: "/posts/arrow_forward" %>
     <% when @all_posts.length %>
-       <div class="arrow arrow-back">
-        <%= link_to post_path(@post.id - 1) do %>
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        <% end  %>
-      </div>
+       <%= render partial: "/posts/arrow_back" %>
       <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
     <% else %>
-     <div class="arrow arrow-back">
-        <%= link_to post_path(@post.id - 1) do %>
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        <% end  %>
-      </div>
+     <%= render partial: "/posts/arrow_back" %>
       <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
-      <div class="arrow arrow-forward">
-        <%= link_to post_path(@post.id + 1)  do %>
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        <% end  %>
-      </div> 
+      <%= render partial: "/posts/arrow_forward" %>
   <% end  %>
   </div>
 
