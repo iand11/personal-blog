@@ -10,14 +10,14 @@
   <div class="post-counter">
   <% case @post.id %>
     <% when 1 %>
-      <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
+      <%= render partial: "/posts/post_counter" %> 
       <%= render partial: "/posts/arrow_forward" %>
     <% when @all_posts.length %>
-       <%= render partial: "/posts/arrow_back" %>
-      <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
+      <%= render partial: "/posts/arrow_back" %>
+      <%= render partial: "/posts/post_counter" %> 
     <% else %>
-     <%= render partial: "/posts/arrow_back" %>
-      <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
+      <%= render partial: "/posts/arrow_back" %>
+      <%= render partial: "/posts/post_counter" %> 
       <%= render partial: "/posts/arrow_forward" %>
   <% end  %>
   </div>
