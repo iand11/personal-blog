@@ -19,3 +19,15 @@
   margin:0;
   font-family: 'Montserrat', sans-serif;
 }
+
+.home_link {
+  width:200px;
+  float: right;
+  margin:1em 4em;
+}
+
+.home_link a {
+  color:lightgrey;
+  text-decoration:none;
+  font-size: 120%
+}
