@@ -1,41 +1,13 @@
 <div class="container">
-  <div class="recent-posts-section">
-    <h2>Latest Posts</h2>
-    <div class="recent-post">
-      <img class="recent-post-image" src="https://unsplash.it/300/300/?image=1033" alt="ooppsss">
-      <h3 class="recent-post-title">First Post</h3>
+  <%= render partial: '/layouts/recent_posts' %>
+
+  <% @all_posts.reverse.each do |post| %>
+    <div class="post-section">
+      <img class="post-image post-item" src="https://unsplash.it/300/300/?image=1002" alt="ooppsss">
+      <p class="post-date post-item"><%= post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+      <h1 class="post-title post-item"><%= link_to post.title, post_path(post) %></h1>
+      <p class="post-short-description post-item"><%= post.body %></p>
     </div>
+  <% end  %>
 
-    <div class="recent-post">
-      <img class="recent-post-image" src="https://unsplash.it/300/300/?image=1002" alt="ooppsss">
-      <h3 class="recent-post-title">Second Post</h3>
-    </div>
-
-    <div class="recent-post">
-      <img class="recent-post-image" src="https://unsplash.it/300/300/?image=965" alt="ooppsss">
-      <h3 class="recent-post-title">Third Post</h3>
-    </div>
-    
-  </div>
-
-  <div class="post-section">
-    <img class="post-image post-item" src="https://unsplash.it/300/300/?image=1033" alt="ooppsss">
-    <p class="post-date post-item">July 1, 2017</p>
-    <h1 class="post-title post-item">First Post</h1>
-    <p class="post-short-description post-item">This is my first post and I can't believe it. This is sooooo crazy whaaaaaaaaaaaat</p>
-  </div>
-
-  <div class="post-section">
-    <img class="post-image post-item" src="https://unsplash.it/300/300/?image=1002" alt="ooppsss">
-    <p class="post-date post-item">July 1, 2017</p>
-    <h1 class="post-title post-item">Second Post</h1>
-    <p class="post-short-description post-item">This is my first post and I can't believe it. This is sooooo crazy whaaaaaaaaaaaat</p>
-  </div>
-
-  <div class="post-section">
-    <img class="post-image post-item" src="https://unsplash.it/300/300/?image=965" alt="ooppsss">
-    <p class="post-date post-item">July 1, 2017</p>
-    <h1 class="post-title post-item">Third Post</h1>
-    <p class="post-short-description post-item">This is my first post and I can't believe it. This is sooooo crazy whaaaaaaaaaaaat</p>
-  </div>
 </div>
