@@ -62,11 +62,13 @@
   -webkit-box-orient:vertical;
 }
 
-.post-title {
+.post-title a{
   margin-left:5px;
+  color: black;
+  text-decoration: none;
 }
 
-.post-title:hover {
+.post-title a:hover {
   color:#0099cc;
 }
 
