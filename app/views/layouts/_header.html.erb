@@ -1,4 +1,7 @@
 <div class="header">
   <p class="home_link"><%= link_to "home", root_path  unless @home%></p>
+  <% if current_user %>
+    <p><%= link_to "Logout", session_path(current_user), :method => :delete %></p>
+  <% end %>
   <p class="page-title">ian's blog</p>
 </div>
