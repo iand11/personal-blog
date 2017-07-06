@@ -18,7 +18,6 @@
   margin:auto;
   text-align: center;
   font-family: 'Satisfy', cursive;
-  opacity: 0.8;
 }
 
 .post-section {
@@ -52,9 +51,15 @@
 }
 
 .post-short-description {
+  width:310px;
   margin-left:5px;
   font-family: "Raleway";
-  color:#3f3f3f; 
+  color:#3f3f3f;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:2; 
+  -webkit-box-orient:vertical;
 }
 
 .post-title {

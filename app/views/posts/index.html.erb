@@ -18,7 +18,16 @@
     
   </div>
 
-  <div class="post-section">
+  <% @all_posts.each do |post| %>
+    <div class="post-section">
+      <img class="post-image post-item" src="https://unsplash.it/300/300/?image=1002" alt="ooppsss">
+      <p class="post-date post-item"><%= post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+      <h1 class="post-title post-item"><%= post.title %></h1>
+      <p class="post-short-description post-item"><%= post.body %></p>
+    </div>
+
+  <% end  %>
+<!--   <div class="post-section">
     <img class="post-image post-item" src="https://unsplash.it/300/300/?image=1033" alt="ooppsss">
     <p class="post-date post-item">July 1, 2017</p>
     <h1 class="post-title post-item">First Post</h1>
@@ -37,5 +46,5 @@
     <p class="post-date post-item">July 1, 2017</p>
     <h1 class="post-title post-item">Third Post</h1>
     <p class="post-short-description post-item">This is my first post and I can't believe it. This is sooooo crazy whaaaaaaaaaaaat</p>
-  </div>
+  </div> -->
 </div>
