@@ -162,6 +162,14 @@
   font-size: 25px;
 }
 
+.arrow a {
+  color:black;
+}
+
+.arrow a:hover {
+  color:white;
+}
+
 .arrow:hover {
   cursor: pointer;
   background-color:#0099cc;
