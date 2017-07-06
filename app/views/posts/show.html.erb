@@ -6,6 +6,11 @@
   <p class="created_at"><%= @post.created_at.strftime("%A, %d %b %Y") %></p>
   <p class="post-body-show"><%= @post.body %></p>
 
+  <% if current_user %>
+    <p class="edit-link"><%= link_to "Edit", edit_post_path %></p>
+    <p class="delete-link"><%= link_to "Delete", post_path, method: :delete %></p>
+  <% end %>
+
 
   <div class="post-counter">
   <% case @post.id %>
