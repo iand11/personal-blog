@@ -8,13 +8,34 @@
 
 
   <div class="post-counter">
-    <div class="arrow arrow-back">
-      <i class="fa fa-arrow-left" aria-hidden="true"></i>
-    </div>
-    <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
-    <div class="arrow arrow-forward">
-      <i class="fa fa-arrow-right" aria-hidden="true"></i>
-    </div> 
+  <% case @post.id %>
+    <% when 1 %>
+      <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
+      <div class="arrow arrow-forward">
+        <%= link_to post_path(@post.id + 1)  do %>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        <% end  %>
+      </div> 
+    <% when @all_posts.length %>
+       <div class="arrow arrow-back">
+        <%= link_to post_path(@post.id - 1) do %>
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <% end  %>
+      </div>
+      <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
+    <% else %>
+     <div class="arrow arrow-back">
+        <%= link_to post_path(@post.id - 1) do %>
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <% end  %>
+      </div>
+      <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
+      <div class="arrow arrow-forward">
+        <%= link_to post_path(@post.id + 1)  do %>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        <% end  %>
+      </div> 
+  <% end  %>
   </div>
 
 </div>
