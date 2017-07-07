@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 
   def index
     @home = true
-    @all_posts = Post.all
+    @all_posts = Post.all.order('created_at ASC')
     @recent_posts = Post.all.order('created_at DESC').take(3)
   end
 
