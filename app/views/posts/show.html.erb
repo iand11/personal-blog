@@ -4,7 +4,7 @@
   <img class="post-pic-show" src="https://unsplash.it/500/500/?image=<%= @post.pic_number %>" alt="ooppsss">
   <h1 class="post-show-title"><%= @post.title %></h1>
   <p class="created_at"><%= @post.created_at.strftime("%A, %d %b %Y") %></p>
-  <p class="post-body-show"><%= @post.body %></p>
+  <p class="post-body-show"><%= simple_format(@post.body) %></p>
 
   <% if current_user %>
     <div class="edit-delete">
