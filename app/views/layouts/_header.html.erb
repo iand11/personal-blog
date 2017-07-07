@@ -1,7 +1,7 @@
 <% if @home %>
   <div class="header_home">
     <% if current_user %>
-      <p class="logout home-links"><%= link_to "Logout", session_path(current_user), :method => :delete %></p>
+      <p class="logout home-links"><%= link_to "logout", session_path(current_user), :method => :delete %></p>
       <p class="new_post_link home-links"><%= link_to "new post", new_post_path %></p>
     <% end %>
   <p class="page-title">ian's blog</p>
@@ -10,7 +10,7 @@
 <% else %>
   <div class="header_other">
     <% if current_user %>
-      <p class="logout"><%= link_to "Logout", session_path(current_user), :method => :delete %></p>
+      <p class="logout"><%= link_to "logout", session_path(current_user), :method => :delete %></p>
       <p class="new_post_link"><%= link_to "new post", new_post_path %></p>
       <p class="page-title-small"><%= link_to "ian's blog", root_path %></p>
     <% else %>
