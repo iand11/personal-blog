@@ -10,6 +10,7 @@
 15.times do 
   Post.create(
     title: Faker::HarryPotter.character,
-    body: Faker::Lorem.paragraph(2)
+    body: Faker::Lorem.paragraph(2),
+    pic_number: rand(0..1084)
     )
 end 

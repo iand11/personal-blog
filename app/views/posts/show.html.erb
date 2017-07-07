@@ -1,40 +1,31 @@
 <div class="container">
   <%= render partial: '/layouts/recent_posts' %>
 
-  <img class="post-pic-show" src="https://unsplash.it/500/500/?image=1033" alt="ooppsss">
+  <img class="post-pic-show" src="https://unsplash.it/500/500/?image=<%= @post.pic_number %>" alt="ooppsss">
   <h1 class="post-show-title"><%= @post.title %></h1>
-  <p class="created_at"><%= @post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+  <p class="created_at"><%= @post.created_at.strftime("%A, %d %b %Y") %></p>
   <p class="post-body-show"><%= @post.body %></p>
+
+  <% if current_user %>
+    <div class="edit-delete">
+      <p class="edit-link post-links"><%= link_to "Edit", edit_post_path %></p>
+      <p class="delete-link post-links"><%= link_to "Delete", post_path, method: :delete %></p>
+    </div>
+  <% end %>
 
 
   <div class="post-counter">
-  <% case @post.id %>
+  <% case current_post(@post) %>
     <% when 1 %>
-      <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
-      <div class="arrow arrow-forward">
-        <%= link_to post_path(@post.id + 1)  do %>
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        <% end  %>
-      </div> 
-    <% when @all_posts.length %>
-       <div class="arrow arrow-back">
-        <%= link_to post_path(@post.id - 1) do %>
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        <% end  %>
-      </div>
-      <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
+      <%= render partial: "/posts/post_counter" %> 
+      <%= render partial: "/posts/arrow_forward" %>
+    <% when all_current_posts.length %>
+      <%= render partial: "/posts/arrow_back" %>
+      <%= render partial: "/posts/post_counter" %> 
     <% else %>
-     <div class="arrow arrow-back">
-        <%= link_to post_path(@post.id - 1) do %>
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        <% end  %>
-      </div>
-      <span class="current-post-number post-number"><%= @post.id %> /</span><span class="all-post-number post-number"> <%= @all_posts.length %></span>
-      <div class="arrow arrow-forward">
-        <%= link_to post_path(@post.id + 1)  do %>
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        <% end  %>
-      </div> 
+      <%= render partial: "/posts/arrow_back" %>
+      <%= render partial: "/posts/post_counter" %> 
+      <%= render partial: "/posts/arrow_forward" %>
   <% end  %>
   </div>
 

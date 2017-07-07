@@ -1,0 +1,15 @@
+<div class="container">
+  <%= form_tag sessions_path do  %>
+    <p>
+      <div><%= text_field_tag :username, params[:username] %></div>
+    </p>
+    
+    <p>
+      <div><%= password_field_tag :password, params[:password] %></div>
+    </p>
+  
+    <p>
+      <div><%= submit_tag "Login" %></div>
+    </p>
+  <% end  %>
+</div>
