@@ -37,20 +37,6 @@
   font-family: 'Satisfy', cursive;
 }
 
-.home_link {
-  display: inline-block;
-  width:150px;
-  float: right;
-  text-align: center;
-}
-
-.home_link a {
-  color:black;
-  text-decoration:none;
-  font-size: 30px;
-  font-family: 'Satisfy', cursive;
-}
-
 .logout {
   margin:0px 10px 0px 20px;
   float:right;
@@ -67,19 +53,14 @@
 }
 
 .new_post_link {
-  margin:0px 10px 0px 20px;
-  display: inline-block;
-  width:100px;
-  float: right;
-  margin-top: -2px;
+  @extend .logout;
 }
 
-.new_post_link a {
-  color:black;
-  text-decoration:none;
-  font-size: 30px;
-  font-family: 'Satisfy', cursive;
+.home_link {
+  @extend .logout;
+  text-align: center;
 }
+
 
 .home-links {
   margin:0px 10px 0px 20px;

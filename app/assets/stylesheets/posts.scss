@@ -45,15 +45,18 @@
   -webkit-box-orient:vertical;
 }
 
-.post-title a{
-  margin-left:5px;
-  color: black;
-  text-decoration: none;
+.post-title {
+  a {
+    margin-left:5px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:#0099cc;
+  }
 }
 
-.post-title a:hover {
-  color:#0099cc;
-}
 
 .recent-posts-section {
   width:330px;
@@ -61,11 +64,6 @@
   float:right;
 }
 
-.recent-posts-section-show {
-  width:230px;
-  margin:0em 3em;
-  float:right;
-}
 
 .recent-post-title {
   width:230px;
@@ -80,14 +78,17 @@
   border-radius: 50px;
 }
 
-.recent-post-title a{
-  color: black;
-  text-decoration: none;
+.recent-post-title {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color:#0099cc;
+  }
 }
 
-.recent-post-title a:hover {
-  color:#0099cc;
-}
 
 .recent-post:hover {
   cursor: pointer;
@@ -144,19 +145,22 @@
   display: inline-block;
 }
 
-.arrow i {
-  line-height: 47px;
-  margin-left: 12px;
-  font-size: 25px;
+.arrow {
+  i {
+    line-height: 47px;
+    margin-left: 12px;
+    font-size: 25px;
+  }
+
+  a {
+    color:black; 
+  }
+
+  a:hover {
+    color:white;
+  }
 }
 
-.arrow a {
-  color:black;
-}
-
-.arrow a:hover {
-  color:white;
-}
 
 .arrow:hover {
   cursor: pointer;
@@ -186,6 +190,7 @@
   text-align: center;
   border-radius: 40px;
   line-height:34px;
+
 }
 
 .edit-link {
