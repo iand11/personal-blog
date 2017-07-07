@@ -15,6 +15,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.pic_number = rand(0..1084)
     if @post.save
       redirect_to root_path
     else
@@ -58,6 +59,6 @@ class PostsController < ApplicationController
 
   private
     def post_params
-      params.require(:post).permit(:title, :body)
+      params.require(:post).permit(:title, :body, :pic_number)
     end
 end

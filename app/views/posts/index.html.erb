@@ -3,7 +3,7 @@
 
   <% @all_posts.reverse.each do |post| %>
     <div class="post-section">
-      <img class="post-image post-item" src="https://unsplash.it/300/300/?image=1002" alt="ooppsss">
+      <img class="post-image post-item" src="https://unsplash.it/300/300/?image=<%= post.pic_number %>" alt="ooppsss">
       <p class="post-date post-item"><%= post.created_at.strftime("%A, %d %b %Y ") %></p>
       <h1 class="post-title post-item"><%= link_to post.title, post_path(post) %></h1>
       <p class="post-short-description post-item"><%= post.body %></p>
