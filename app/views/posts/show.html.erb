@@ -7,8 +7,10 @@
   <p class="post-body-show"><%= @post.body %></p>
 
   <% if current_user %>
-    <p class="edit-link"><%= link_to "Edit", edit_post_path %></p>
-    <p class="delete-link"><%= link_to "Delete", post_path, method: :delete %></p>
+    <div class="edit-delete">
+      <p class="edit-link post-links"><%= link_to "Edit", edit_post_path %></p>
+      <p class="delete-link post-links"><%= link_to "Delete", post_path, method: :delete %></p>
+    </div>
   <% end %>
 
 
