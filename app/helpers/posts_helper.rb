@@ -14,13 +14,13 @@ module PostsHelper
 
   def next_post(x)
     a = all_current_posts.index(x)
-    b = all_current_posts[a+1]
+    b = all_current_posts[a + 1]
     b.id
   end
 
   def prev_post(x)
     a = all_current_posts.index(x)
-    b = all_current_posts[a-1]
+    b = all_current_posts[a - 1]
     b.id
   end
 end
