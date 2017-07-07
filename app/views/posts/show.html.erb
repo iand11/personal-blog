@@ -13,11 +13,11 @@
 
 
   <div class="post-counter">
-  <% case @post.id %>
+  <% case current_post(@post) %>
     <% when 1 %>
       <%= render partial: "/posts/post_counter" %> 
       <%= render partial: "/posts/arrow_forward" %>
-    <% when @all_posts.length %>
+    <% when all_current_posts.length %>
       <%= render partial: "/posts/arrow_back" %>
       <%= render partial: "/posts/post_counter" %> 
     <% else %>
