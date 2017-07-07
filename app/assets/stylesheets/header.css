@@ -1,0 +1,90 @@
+.header_home {
+  width:100%;
+  height:400px;
+  background-image: url("https://unsplash.it/1500/800/?image=998");
+}
+
+.header_other {
+  width:100%;
+  height:50px;
+}
+
+.page-title-small {
+  display: inline-block;
+  width:250px;
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.page-title-small a{
+  color: black;
+  text-decoration: none;
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+  margin-left: 5px;
+
+}
+
+.page-title {
+  line-height: 300px;
+  font-size: 80px;
+  color: lightgrey;
+  width:400px;
+  height:400px;
+  margin:auto;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+}
+
+.home_link {
+  display: inline-block;
+  width:150px;
+  float: right;
+  text-align: center;
+}
+
+.home_link a {
+  color:black;
+  text-decoration:none;
+  font-size: 30px;
+  font-family: 'Satisfy', cursive;
+}
+
+.logout {
+  margin:0px 10px 0px 20px;
+  float:right;
+  display: inline-block;
+  width:100px;
+  margin-left: 15px;
+}
+
+.logout a{
+  color:black;
+  text-decoration:none;
+  font-size: 30px;
+  font-family: 'Satisfy', cursive;
+}
+
+.new_post_link {
+  margin:0px 10px 0px 20px;
+  display: inline-block;
+  width:100px;
+  float: right;
+  margin-top: -2px;
+}
+
+.new_post_link a {
+  color:black;
+  text-decoration:none;
+  font-size: 30px;
+  font-family: 'Satisfy', cursive;
+}
+
+.home-links {
+  margin:0px 10px 0px 20px;
+}
+
+.home-links a{
+  color:lightgrey;
+}
