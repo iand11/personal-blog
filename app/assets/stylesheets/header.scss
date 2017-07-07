@@ -15,14 +15,14 @@
   font-family: 'Satisfy', cursive;
   font-size: 30px;
   margin-left: 10px;
-}
 
-.page-title-small a{
-  color: black;
-  text-decoration: none;
-  font-family: 'Satisfy', cursive;
-  font-size: 30px;
-  margin-left: 5px;
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    margin-left: 5px;
+  }
 
 }
 
@@ -43,13 +43,13 @@
   display: inline-block;
   width:100px;
   margin-left: 15px;
-}
-
-.logout a{
-  color:black;
-  text-decoration:none;
-  font-size: 30px;
-  font-family: 'Satisfy', cursive;
+  
+  a {
+    color:black;
+    text-decoration:none;
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+  }
 }
 
 .new_post_link {
@@ -64,8 +64,9 @@
 
 .home-links {
   margin:0px 10px 0px 20px;
+  
+  a {
+    color:lightgrey;
+  }
 }
 
-.home-links a{
-  color:lightgrey;
-}

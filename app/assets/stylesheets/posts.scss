@@ -8,15 +8,14 @@
   width:320px;
   margin:3em;
   box-shadow: 0px 0px 20px black;
+  
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #FFF;
+    position: relative;
+    top: 5px;
+  };
 }
-
-.post-section:hover{
- cursor: pointer;
- box-shadow: 0px 0px 0px #FFF;
- position: relative;
- top: 5px;
-}
-
 
 .post-item {
   width:320px;
@@ -69,16 +68,7 @@
   width:230px;
   float: right;
   margin:50px 0px 0px -20px;
-}
 
-.recent-post-image {
-  width:90px;
-  height:90px;
-  margin:1em 0em;
-  border-radius: 50px;
-}
-
-.recent-post-title {
   a {
     color: black;
     text-decoration: none;
@@ -89,6 +79,12 @@
   }
 }
 
+.recent-post-image {
+  width:90px;
+  height:90px;
+  margin:1em 0em;
+  border-radius: 50px;
+}
 
 .recent-post:hover {
   cursor: pointer;
@@ -107,7 +103,7 @@
 }
 
 .post-show-title{
-  width:300px;
+  width:700px;
 }
 
 .post-body-show {
@@ -131,11 +127,12 @@
   float:right;
   margin:20px 50px 50px 0px;
   display: inline-block;
+
+  span {
+    font-size: 120%;
+  }
 }
 
-.post-counter span {
-  font-size: 120%;
-}
 
 .arrow {
   height:50px;
@@ -143,9 +140,13 @@
   border: 1px solid lightgrey;
   border-radius: 30px;
   display: inline-block;
-}
 
-.arrow {
+  &:hover{
+    background-color:#0099cc;
+    cursor: pointer;
+    color: white;
+  }
+
   i {
     line-height: 47px;
     margin-left: 12px;
@@ -159,14 +160,9 @@
   a:hover {
     color:white;
   }
+
 }
 
-
-.arrow:hover {
-  cursor: pointer;
-  background-color:#0099cc;
-  color: white;
-}
 
 .arrow-back {
   margin-right: 8px
@@ -191,15 +187,15 @@
   border-radius: 40px;
   line-height:34px;
 
+  a {
+    text-decoration: none; 
+    color:white;
+  }
+
 }
 
 .edit-link {
   margin-left:0px;
-}
-
-.post-links a {
-  text-decoration: none; 
-  color:white;
 }
 
 .post-form textarea{
