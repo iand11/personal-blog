@@ -1,0 +1,22 @@
+
+.ian-pic {
+  display: inline-block;
+  height:300px;
+  width:250px;
+  border-radius: 10px;
+  margin:10px;
+}
+
+.bio {
+  vertical-align: bottom;
+  margin:10px;
+  display: inline-block;
+  width:950px;
+  /*border-bottom: 1px solid;*/
+  
+  p {
+    font-size: 25px;
+    font-family: "Raleway";
+    color:#3f3f3f;
+  }
+}

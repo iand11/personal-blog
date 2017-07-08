@@ -3,6 +3,7 @@
   <% @recent_posts.each do |post| %>
     <div class="recent-post">
       <img class="recent-post-image" src="https://unsplash.it/300/300/?image=<%= post.pic_number %>" alt="ooppsss">
+      <!-- <p class= "recent-post-image"><%= link_to image_tag(post_pic(post)), post_path(post)%></p> -->
       <h3 class="recent-post-title"><%= link_to post.title, post_path(post) %></h3>
     </div>
   <% end %>
