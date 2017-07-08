@@ -23,4 +23,10 @@ module PostsHelper
     b = all_current_posts[a - 1]
     b.id
   end
+
+  def post_pic(post)
+    "https://unsplash.it/300/300/?image=#{post.pic_number} "
+  end
 end
+
+

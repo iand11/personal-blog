@@ -201,3 +201,18 @@
 .post-form textarea{
   font-size: 17px;
 }
+
+/*New*/
+
+.post-form input[type=submit]{
+    width:150px;
+    font-size: 18px;
+    background-color: #0099cc;
+    border:none;
+    border-radius: 30px;
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+}
