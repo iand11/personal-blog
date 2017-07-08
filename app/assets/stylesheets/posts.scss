@@ -7,13 +7,17 @@
   display: inline-block;
   width:320px;
   margin:3em;
+  top:0;
   box-shadow: 0px 0px 20px black;
+  transition: all 1000ms ease;
+  /*transition: top 5s;*/
   
   &:hover {
     cursor: pointer;
     box-shadow: 0px 0px 0px #FFF;
     position: relative;
-    top: 5px;
+    top: 2px;
+    transition: all 1000ms ease;
   };
 }
 
@@ -49,10 +53,12 @@
     margin-left:5px;
     color: black;
     text-decoration: none;
+    transition: all 500ms ease;
   }
   
   a:hover {
     color:#0099cc;
+    transition: all 500ms ease;
   }
 }
 
@@ -69,13 +75,16 @@
   float: right;
   margin:50px 0px 0px -20px;
 
+
   a {
     color: black;
     text-decoration: none;
+    transition: all 500ms ease;
   }
 
   a:hover {
     color:#0099cc;
+    transition: all 500ms ease;
   }
 }
 
@@ -140,11 +149,13 @@
   border: 1px solid lightgrey;
   border-radius: 30px;
   display: inline-block;
+  transition: all 800ms ease;
 
   &:hover{
     background-color:#0099cc;
     cursor: pointer;
     color: white;
+    transition: all 800ms ease;
   }
 
   i {
@@ -155,10 +166,12 @@
 
   a {
     color:black; 
+    transition: all 800ms ease;
   }
 
   a:hover {
     color:white;
+    transition: all 800ms ease;
   }
 
 }
@@ -211,8 +224,16 @@
     border:none;
     border-radius: 30px;
     color: white;
+    height:30px;
+    transition: all 1200ms ease;
+
+
 
     &:hover {
       cursor: pointer;
+      width:300px;
+      height: 50px;
+      font-size: 25px;
+      transition: all 1200ms ease;
     }
 }
