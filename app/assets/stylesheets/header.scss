@@ -33,7 +33,7 @@
   color: lightgrey;
   width:400px;
   height:400px;
-  margin:auto;
+  margin:0px auto;
   text-align: center;
   font-family: 'Satisfy', cursive;
 }
@@ -81,3 +81,15 @@
   font-size: 30px;
   font-family: 'Satisfy', cursive;
 }
+
+.button {
+  width:100px;
+}
+
+#login-form {
+  height:100px;
+  width:200px;
+  background-color: white;
+}
+
+

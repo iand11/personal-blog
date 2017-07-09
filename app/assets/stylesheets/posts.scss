@@ -8,15 +8,15 @@
   width:320px;
   margin:3em;
   top:0;
-  box-shadow: 0px 0px 20px black;
+  box-shadow: 0px 0px 35px lightgrey;
   transition: all 1000ms ease;
+  cursor: pointer;
   /*transition: top 5s;*/
   
   &:hover {
-    cursor: pointer;
     box-shadow: 0px 0px 0px #FFF;
     position: relative;
-    top: 2px;
+    top: 3px;
     transition: all 1000ms ease;
   };
 }
