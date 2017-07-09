@@ -13,3 +13,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+function formShow() {
+  var form = document.getElementById("login-form");
+  form.classList.toggle("hidden")
+}

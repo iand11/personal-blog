@@ -1,3 +1,38 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#login-form {
+  width:400px;
+  animation: fadeIn 2s;
+  .field input{
+    width:350px;
+    height: 30px;
+    margin:5px;
+    border:none;
+    border-bottom: 1px solid lightgrey;
+    outline:none;
+    font-size: 20px;
+  }
+  input[type=submit]{
+    margin:5px 0px;
+    width:80px;
+    font-size: 18px;
+    background-color: #0099cc;
+    border:none;
+    border-radius: 30px;
+    color: white;
+    height:30px;
+    cursor:pointer;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

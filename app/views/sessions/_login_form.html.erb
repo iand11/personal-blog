@@ -1,0 +1,15 @@
+<div id="login-form" class="hidden">
+    <%= form_tag sessions_path do  %>
+    <p>
+      <div class="field"><%= text_field_tag :username, params[:username], placeholder: "me" %></div>
+    </p>
+    
+    <p>
+      <div class="field"><%= password_field_tag :password, params[:password], placeholder:"password" %></div>
+    </p>
+
+    <p>
+      <div><%= submit_tag "Login" %></div>
+    </p>
+    <% end %>
+  </div>

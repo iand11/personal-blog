@@ -1,4 +1,5 @@
 <div class="container">
+  <%= render partial: '/sessions/login_form' %>
   <%= render partial: '/layouts/recent_posts' %>
 
   <% @all_posts.reverse.each do |post| %>
