@@ -2,7 +2,6 @@
   width:100%;
   height:300px;
   background-image: url("https://unsplash.it/1500/650/?image=885");
-  /*background-repeat: none;*/
   background-size: cover;
 }
 
@@ -30,6 +29,7 @@
 }
 
 .page-title {
+  text-shadow: 0.5px 0.5px 0.5px #000;
   line-height: 300px;
   font-size: 80px;
   color: white;
@@ -67,9 +67,9 @@
 
 .home-links {
   margin:0px 10px 0px 20px;
-  
   a {
-    color:white;
+  color:white;
+  text-shadow: 0.5px 0.5px 0.5px #000
   }
 }
 
