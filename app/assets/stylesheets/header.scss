@@ -1,7 +1,9 @@
 .header_home {
   width:100%;
-  height:400px;
-  background-image: url("https://unsplash.it/1500/800/?image=998");
+  height:300px;
+  background-image: url("https://unsplash.it/1500/650/?image=885");
+  /*background-repeat: none;*/
+  background-size: cover;
 }
 
 .header_other {
@@ -30,9 +32,9 @@
 .page-title {
   line-height: 300px;
   font-size: 80px;
-  color: lightgrey;
+  color: white;
   width:400px;
-  height:400px;
+  height:300px;
   margin:0px auto;
   text-align: center;
   font-family: 'Satisfy', cursive;
@@ -67,7 +69,7 @@
   margin:0px 10px 0px 20px;
   
   a {
-    color:lightgrey;
+    color:white;
   }
 }
 
