@@ -12,6 +12,7 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require ckeditor/init
 //= require_tree .
 function formShow() {
   var form = document.getElementById("login-form");
