@@ -10,7 +10,6 @@
   top:0;
   box-shadow: 0px 8px 30px -3px rgba(0,0,0,0.34);
   transition: all 1000ms ease;
-  cursor: pointer;
   
   &:hover {
     box-shadow: 0px 0px 0px #FFF;
@@ -30,14 +29,15 @@
 }
 
 .post-date {
+  width:250px;
+  margin:0.5em auto;
   font-family: "Raleway";
-  margin-left:5px;
   color:#8d8d8d;
 }
 
 .post-short-description {
-  width:310px;
-  margin-left:5px;
+  width:250px;
+  margin:0.5em auto 1em ;
   p, h1, h2, h3, h4 {  
     display:none;
   }
@@ -56,8 +56,9 @@
 }
 
 .post-title {
+  width:250px;
+  margin:0.5em auto;
   a {
-    margin-left:5px;
     color: black;
     text-decoration: none;
     transition: all 500ms ease;
@@ -102,9 +103,6 @@
   border-radius: 50px;
 }
 
-.recent-post:hover {
-  cursor: pointer;
-}
 
 
 /*Show*/
@@ -126,15 +124,21 @@
     width:1200px;
     padding-top:1em;
 
+  p:first-of-type {
+    margin-top: 0px;
+  }  
+
   p {
     font-size: 120%;
     line-height: 1.8;
     color:#666666;
+    margin:17px 0px;
   }
   p, h1, h2, h3, h4{
     font-family: "Raleway";
   } 
 }
+
 
 .post-body-show p:first-of-type::first-letter{
   font-size: 170%;
