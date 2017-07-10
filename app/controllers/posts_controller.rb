@@ -9,7 +9,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @all_posts = Post.all
+    @all_posts = Post.all.order('created_at ASC')
     @recent_posts = Post.all.order('created_at DESC').take(3)
   end
 

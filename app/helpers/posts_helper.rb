@@ -13,15 +13,15 @@ module PostsHelper
   end
 
   def next_post(x)
-    a = all_current_posts.index(x)
-    b = all_current_posts[a + 1]
-    b.id
+    current = all_current_posts.index(x)
+    after = all_current_posts[current + 1]
+    after.id
   end
 
   def prev_post(x)
-    a = all_current_posts.index(x)
-    b = all_current_posts[a - 1]
-    b.id
+    current = all_current_posts.index(x)
+    previous = all_current_posts[current - 1]
+    previous.id
   end
 
   def post_pic(post)

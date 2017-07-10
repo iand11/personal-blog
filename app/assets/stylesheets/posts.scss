@@ -38,6 +38,13 @@
 .post-short-description {
   width:310px;
   margin-left:5px;
+  p, h1, h2, h3, h4 {  
+    display:none;
+  }
+}
+
+.post-short-description p:first-of-type {
+  display: block;
   font-family: "Raleway";
   color:#8d8d8d;
   letter-spacing: 0.2px;
@@ -116,15 +123,20 @@
 }
 
 .post-body-show {
-  font-family: "Raleway";
-  width:1200px;
-  font-size: 120%;
-  line-height: 1.8;
-  color:#666666;
-  padding-top:1em;
+    width:1200px;
+    padding-top:1em;
+
+  p {
+    font-size: 120%;
+    line-height: 1.8;
+    color:#666666;
+  }
+  p, h1, h2, h3, h4{
+    font-family: "Raleway";
+  } 
 }
 
-.post-body-show::first-letter{
+.post-body-show p:first-of-type::first-letter{
   font-size: 170%;
   margin-right:10px;
   font-family: 'Satisfy', cursive;
