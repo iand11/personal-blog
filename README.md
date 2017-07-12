@@ -1,25 +1,14 @@
-# README
-![alt text](app/assets/images/dbc_pic_filter.JPG?raw=true)
+# Personal Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My Personal blog is a blog to document life after dev bootcamp concentrating on continued learning and fitness.
 
-Things you may want to cover:
+## Home Page
+![alt text](readme_images/personal-bog-home.JPG?raw=true)
 
-* Ruby version
+## Blog Posts
+![alt text](readme_images/first-post1.JPG?raw=true)
+![alt text](readme_images/first-post2.JPG?raw=true)
+![alt text](readme_images/short-and-sweet.JPG?raw=true)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## New Post
+![alt text](readme_images/new-post.JPG?raw=true)
