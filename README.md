@@ -7,7 +7,8 @@ My Personal blog is a blog to document life after dev bootcamp concentrating on 
 
 ## Blog Posts
 ![alt text](readme_images/first-post1.png?raw=true)
-![alt text](readme_images/first-post2.png?raw=true)
+
+## Blog Posts
 ![alt text](readme_images/short-and-sweet.png?raw=true)
 
 ## New Post
