@@ -14,4 +14,5 @@ My Personal blog is a blog to document life after dev bootcamp concentrating on 
 ## New Post
 ![alt text](readme_images/new-post.png?raw=true)
 
-Tech Stack: Ruby, Javascript, Rails, HTML5, CSS3, SASS
+## Tech Stack
+Ruby, Javascript, Rails, HTML5, CSS3, SASS
