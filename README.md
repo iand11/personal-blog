@@ -1,5 +1,5 @@
 # README
-![alt text](personal-blog/app/assets/images/dbc_pic_filter.JPG)
+![alt text](app/assets/images/dbc_pic_filter.JPG?raw=true)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
