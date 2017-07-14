@@ -72,6 +72,7 @@
   }
 }
 
+/*Latest Posts*/
 
 .recent-posts-section {
   width:330px;
@@ -86,6 +87,11 @@
   float:right;
 }
 
+.recent-posts-header{
+  width:150px;
+  padding-bottom: 5px;
+  border-bottom: solid 1.3px grey;
+}
 
 .recent-post-title {
   width:230px;

@@ -3,7 +3,7 @@
 <% else %>
    <div class="recent-posts-section">
 <% end %>
-  <h2>Latest Posts</h2>
+  <h2 class="recent-posts-header">Latest Posts</h2>
   <% @recent_posts.each do |post| %>
     <div class="recent-post">
       <img class="recent-post-image" src="https://unsplash.it/300/300/?image=<%= post.pic_number %>" alt="ooppsss">
