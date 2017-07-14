@@ -15,6 +15,6 @@
 //= require ckeditor/init
 //= require_tree .
 function formShow() {
-  var form = document.getElementById("login-form");
-  form.classList.toggle("hidden")
+  var form = document.getElementById('login-form');
+  form.classList.toggle('hidden');
 }

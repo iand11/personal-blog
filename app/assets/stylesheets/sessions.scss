@@ -2,32 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 #login-form {
-  width:400px;
+  width: 400px;
   animation: fadeIn 2s;
-  
   .field input {
-    width:350px;
+    width: 350px;
     height: 30px;
-    margin:5px;
-    border:none;
+    margin: 5px;
+    border: none;
     border-bottom: 1px solid lightgrey;
-    outline:none;
+    outline: none;
     font-size: 20px;
   }
-  
-  input[type=submit]{
-    margin:5px 0px;
-    width:80px;
+  input[type=submit] {
+    margin: 5px 0px;
+    width: 80px;
     font-size: 18px;
     background-color: #1a9199;
-    border:none;
+    border: none;
     border-radius: 30px;
     color: white;
-    height:30px;
-    cursor:pointer;
-    outline:none;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
   }
 }
 
@@ -36,6 +33,10 @@
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
