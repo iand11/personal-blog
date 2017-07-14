@@ -6,5 +6,4 @@ Rails.application.routes.draw do
   resources :posts
   resources :sessions, only: [:new, :create, :destroy]
 
-  get 'about', to: 'users#index', as: :about
 end
