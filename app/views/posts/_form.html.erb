@@ -2,11 +2,11 @@
   <div class="post-form">
     <%= form_for @post do |f| %>
       <p>
-        <span class="label"><%= f.label :title  %></span> <br>
+        <p class="label"><%= f.label :title  %></p>
         <%= f.text_area :title, size:"40x1" %>
       </p>
       <p>
-        <span class="label"><%= f.label :body  %></span>  <br>
+        <p class="label"><%= f.label :body  %></p> 
         <%= f.cktext_area :body, size:"100x10" %>
       </p>
       <p>
