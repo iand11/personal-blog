@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require ckeditor/init
+//= require turbolinks
 //= require_tree .
 function formShow() {
   var form = document.getElementById('login-form');

@@ -16,3 +16,6 @@ My Personal blog is a blog to document life after dev bootcamp concentrating on 
 
 ## Tech Stack
 Ruby, Javascript, Rails, HTML5, CSS3, SASS
+
+## Deployment
+https://ians-blog.herokuapp.com/
