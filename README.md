@@ -1,6 +1,6 @@
 # Personal Blog
 
-My Personal blog is a blog to document life after dev bootcamp concentrating on continued learning and fitness.
+My Personal blog is a blog to document life after dev bootcamp concentrating on continued learning, fitness, and taking care of a new puppy.
 
 ## Home Page
 ![alt text](readme_images/personal-bog-home.png?raw=true)
